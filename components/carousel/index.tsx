@@ -24,7 +24,7 @@ function CarouselLocal() {
                 <CarouselContent>
                     {Array.from({ length: 5 }).map((_, index) => (
                         <CarouselItem key={index}>
-                            <div className="h-[27rem] w-full relative">
+                            <div className="h-[33rem] w-full relative">
                                 <Image
                                     src={`/images/image_${index + 1}.jpg`}
                                     alt="Picture of the author"
