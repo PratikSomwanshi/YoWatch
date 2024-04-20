@@ -3,6 +3,7 @@ import { Mukta } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Footer from "@/components/footer";
+import QueryProvider from "@/components/queryClientProvider";
 
 const inter = Mukta({ subsets: ["devanagari"], weight: ["400", "500", "600"] });
 
@@ -19,7 +20,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={cn(inter.className, "bg-black bg-opacity-80")}>
-                {children}
+                <QueryProvider>{children}</QueryProvider>
             </body>
         </html>
     );
